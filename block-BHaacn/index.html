@@ -43,8 +43,12 @@
     <header class="header absolute">
         <div class="flex container justify-space align-center padding ">
             <a class="brand" href="#">Alt Events</a>
-            <nav>
-                <ul class="flex align-center ">
+            <label class="bars" for="toggle">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input id="toggle" type="checkbox">
+            <nav class="nav">
+                <ul class="flex align-center column">
                     <li>
                         <a href="#">HOME</a>
                     </li>
@@ -160,17 +164,17 @@
                     Schedule
                 </h4>
             </div>
-            <article class="flex justify-space align-center schedule-text">
-                      <div class=" flex-15 ">
+            <article class="flex justify-space align-center schedule-text column wrap">
+                      <div class=" flex-15 flex-100">
                           <div class="ballon">
                             <span>06</span>
                             <span>Sept</span>
                           </div>
                       </div>
-                     <div class="flex-15">
+                     <div class="flex-15 flex-100">
                         <img class="width-full border-radius font-0" src="assets/media/schedule-01.jpg" alt="">
                      </div>
-                     <div class="flex-60">
+                     <div class="flex-60 flex-100">
                         <h4 class="heading-text ">
                             Digital World Event Conversation
                         </h4>
@@ -181,17 +185,17 @@
                      </div>
             </article>
                 <hr/>   
-            <article class="flex justify-space align-center schedule-text">
-                <div class=" flex-15 ">
+            <article class="flex justify-space align-center schedule-text column wrap">
+                <div class=" flex-15 flex-100">
                     <div class="ballon ballon-1">
                       <span>07</span>
                       <span>Sept</span>
                     </div>
                 </div>
-              <div class="flex-15">
+              <div class="flex-15 flex-100">
                   <img class="width-full border-radius font-0" src="assets/media/schedule-02.jpg" alt="">
               </div>
-              <div class="flex-60">
+              <div class="flex-60 flex-100">
                   <h4 class="heading-text ">
                       Web Designing Conversation
                   </h4>
@@ -202,17 +206,17 @@
               </div>
             </article>
             <hr/>   
-            <article class="flex justify-space align-center schedule-text">
-              <div class=" flex-15 ">
+            <article class="flex justify-space align-center schedule-text column wrap">
+              <div class=" flex-15 flex-100">
               <div class="ballon ballon-1">
                <span>08</span>
                <span>Sept</span>
               </div>
               </div>
-              <div class="flex-15">
+              <div class="flex-15 flex-100">
                <img class="width-full border-radius font-0" src="assets/media/schedule-03.jpg" alt="">
               </div>
-              <div class="flex-60">
+              <div class="flex-60 flex-100">
                <h4 class="heading-text ">
                 Web Development Conversation
                </h4>
@@ -223,17 +227,17 @@
              </div>
             </article>
             <hr/>   
-            <article class="flex justify-space align-center schedule-text">
-              <div class="flex-15">
+            <article class="flex justify-space align-center schedule-text column wrap">
+              <div class="flex-15 flex-100">
               <div class="ballon ballon-1">
                <span>09</span>
                <span>Sept</span>
                 </div>
                </div>
-               <div class="flex-15">
+               <div class="flex-15 flex-100">
                  <img class="width-full border-radius font-0" src="assets/media/schedule-04.jpg" alt="">
                 </div>
-                <div class="flex-60">
+                <div class="flex-60 flex-100">
                    <h4 class="heading-text ">
                     Digital Marketing Conference
                    </h4>
@@ -251,8 +255,8 @@
         <!-- INFO SECTION -->
 
         <section class="join-section">
-            <div class="flex justify-space align-center text-center container padding">
-                <div class="info-section info-background">
+            <div class="flex justify-space align-center text-center container padding wrap">
+                <div class="info-section info-background flex-100">
                     <img class="" src="assets/media/speaker.png" alt="speaker">
                     <h4 class="text-center">
                         20+
@@ -261,7 +265,7 @@
                         Great Speakers
                     </p>
                 </div>
-                <div class="info-section">
+                <div class="info-section flex-100">
                     <img class="" src="assets/media/idea.png" alt="">
                     <h4 class="text-center">
                         50+
@@ -270,7 +274,7 @@
                         Total Topic
                     </p>
                 </div>
-                <div class="info-section info-background">
+                <div class="info-section info-background flex-100">
                     <img class="" src="assets/media/participants.png" alt="">
                     <h4 class="text-center">
                         300+
@@ -279,7 +283,7 @@
                         Participants
                     </p>
                 </div>
-                <div class="info-section info-background">
+                <div class="info-section info-background flex-100 ">
                     <img class="" src="assets/media/sponsor.png" alt="">
                     <h4 class="text-center">
                         20+
@@ -311,8 +315,8 @@
                 <h4 class="text-center heading-text">
                     Our Latest News
                 </h4>
-                <div class="flex justify-space item-center news-section">
-                    <article class="flex-30">
+                <div class="flex justify-space item-center news-section wrap">
+                    <article class="flex-30 flex-100">
                         <div>
                             <img class="width-full font-0" src="assets/media/news-01.png" alt="">
                         </div>
@@ -326,7 +330,7 @@
                         </p>
                         <a href="#">Read More</a>
                     </article>
-                    <article class="flex-30">
+                    <article class="flex-30 flex-100">
                         <div>
                             <img class="width-full font-0"  src="assets/media/news-02.png" alt="">
                         </div>
@@ -340,7 +344,7 @@
                         </p>
                         <a class="strong" href="#">Read More</a>
                     </article>
-                    <article class="flex-30">
+                    <article class="flex-30 flex-100">
                         <div>
                             <img class="width-full font-0" src="assets/media/news-03.png" alt="">
                         </div>
@@ -363,16 +367,16 @@
 
     <footer>
         <section class="footer">
-            <div class="flex justify-space align-center container padding">
-                <div class="flex-15">
-                    <img class="width-full" src="assets/media/footer-logo.png" alt="logo">
+            <div class="flex justify-space align-center container padding wrap text-center-1">
+                <div class="flex-15 flex-100">
+                    <img src="assets/media/footer-logo.png" alt="logo">
                 </div>
-                <div class="flex-30">
+                <div class="flex-30 flex-100">
                     <h4>
                         Quick Links
                     </h4>
                     <nav>
-                        <ul class="flex">
+                        <ul class="flex column">
                             <li>
                                 <a href="#">Program</a>
                             </li>
@@ -388,7 +392,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="flex-35">
+                <div class="flex-35 flex-100">
                     <h4>
                         Follow Us
                     </h4>
