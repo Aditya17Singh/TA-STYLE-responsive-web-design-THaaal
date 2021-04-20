@@ -350,6 +350,9 @@ hr{
 .width-footer{
     width: 60%;
 }
+#toggle{
+    display: none;
+}
 
 @media screen  and (max-width:768px) {
     html{
@@ -365,4 +368,46 @@ hr{
     .order{
         order: 1;
     }
+    .nav{
+        display: none;
+    }
+    #toggle:checked ~ .nav{
+        display: inline-block;
+    }
+    .bars{
+        font-size: 1.5rem;
+        color: white;
+        position: fixed;
+        right: 30px;
+        top: 27px;
+        z-index: 2;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(139, 63, 63, 0.8);
+        padding-top: 19rem;
+        z-index: 1;
+    }
+    .brand{
+        position: fixed;
+        z-index: 2;
+        top: 25px;
+    }
+    hr{
+        display: none;
+    }
+    .text-center-1{
+        text-align: center;
+    }
+    .nav li{
+        margin-bottom: 1rem;
+    }
+
 }
