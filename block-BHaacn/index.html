@@ -1,0 +1,415 @@
+<!-- writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-2.png)
+
+#### Small Screen view(Below 768px)
+
+1. Figure what would be the best possible way to display the layout on small screens.
+
+2. Create hmaburger icon to toggle menu on mobile view.
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper.
+- Pay attention to the codes, your code quality matters a lot.
+- Try to implement the layout as exactly as it has been provided in the design.
+- Pay attention to minor things like spacing, alignment, size, etc.
+- Use "Nunito" font-family for the assignment.
+- Figure out the best possible way to display the layout on small screens.
+- Create hmaburger icon to toggle menu on small screen view.
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignment-2 | Responsive Web Design</title>
+
+    <!--FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/508c3a88fa.js" crossorigin="anonymous"></script>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+</head>
+<body>
+    <header class="header absolute">
+        <div class="flex container justify-space align-center padding ">
+            <a class="brand" href="#">Alt Events</a>
+            <label class="bars" for="toggle">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input id="toggle" type="checkbox">
+            <nav class="nav">
+                <ul class="flex align-center column">
+                    <li>
+                        <a href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                    <li>
+                        <a class="btn" href="#"> Join Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+            <article class="container flex justify-space align-center padding-hero padding wrap">
+                <div class="flex-45 flex-100 order">
+                    <h1>
+                        Web Developer Conference <strong class="strong">2020</strong>
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere quas dolores?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae nulla fugiat!
+                        Lorem ipsum dolor sit
+                    </p>
+                    <a class="btn" href="#">Register Now</a>
+                </div>
+                <div class="flex-35 flex-100 ">
+                    <img class="width-full font-0" src="assets/media/hero.png" alt="dj">
+                </div>
+            </article>
+        </section>
+
+        <!-- EVENT SECTION -->
+
+        <section>
+            <article class="container flex padding align-center justify-space wrap">
+                <div class="flex-40 flex-100">
+                    <img class="width-full" src="assets/media/about.png" alt="about">
+                </div>
+                <div class="flex-50 flex-100">
+                    <h2 class="heading-text">
+                        ABOUT THE EVENT
+                    </h2>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere quas dolores?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quae nulla fugiat!
+                        Lorem ipsum dolor sit
+                    </p>
+                    <a class="btn" href="#">Know More</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- JOIN SECTION -->
+
+        <section class="join-section ">
+            <div class="container padding ">
+                <h2 class="text-center heading-text">
+                    WHY YOU SHOULD JOIN
+                </h2>
+                <article class="flex justify-space align-center wrap">
+                    <div class="flex-30 join-article relative flex-100">
+                        <h3 class="heading-text">
+                            Network
+                        </h3>
+                        <p class="paragraph">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur.
+                            Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                        <div class="span-1 span">1</div>
+                    </div>
+                    <div class="flex-30 join-article relative flex-100">
+                        <h3 class="heading-text">
+                            Great Speakers
+                        </h3>
+                        <p class="paragraph">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur.
+                            Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                        <div class="span-1 span">2</div>
+                    </div>
+                    <div class="flex-30 join-article relative flex-100">
+                        <h3 class="heading-text">
+                            Information
+                        </h3>
+                        <p class="paragraph">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur.
+                            Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                        <div class="span-1 span">3</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SCHEDULE SECTION -->
+
+        <section class="container padding">
+            <div>
+                <h4 class="text-center heading-text">
+                    Schedule
+                </h4>
+            </div>
+            <article class="flex justify-space align-center schedule-text column wrap">
+                      <div class=" flex-15 flex-100">
+                          <div class="ballon">
+                            <span>06</span>
+                            <span>Sept</span>
+                          </div>
+                      </div>
+                     <div class="flex-15 flex-100">
+                        <img class="width-full border-radius font-0" src="assets/media/schedule-01.jpg" alt="">
+                     </div>
+                     <div class="flex-60 flex-100">
+                        <h4 class="heading-text ">
+                            Digital World Event Conversation
+                        </h4>
+                        <p class="paragraph-schedule">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, iusto eum?
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem, ipsum dolor.
+                        </p>
+                     </div>
+            </article>
+                <hr/>   
+            <article class="flex justify-space align-center schedule-text column wrap">
+                <div class=" flex-15 flex-100">
+                    <div class="ballon ballon-1">
+                      <span>07</span>
+                      <span>Sept</span>
+                    </div>
+                </div>
+              <div class="flex-15 flex-100">
+                  <img class="width-full border-radius font-0" src="assets/media/schedule-02.jpg" alt="">
+              </div>
+              <div class="flex-60 flex-100">
+                  <h4 class="heading-text ">
+                      Web Designing Conversation
+                  </h4>
+                  <p class="paragraph-schedule">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, iusto eum?
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem, ipsum dolor.
+                  </p>
+              </div>
+            </article>
+            <hr/>   
+            <article class="flex justify-space align-center schedule-text column wrap">
+              <div class=" flex-15 flex-100">
+              <div class="ballon ballon-1">
+               <span>08</span>
+               <span>Sept</span>
+              </div>
+              </div>
+              <div class="flex-15 flex-100">
+               <img class="width-full border-radius font-0" src="assets/media/schedule-03.jpg" alt="">
+              </div>
+              <div class="flex-60 flex-100">
+               <h4 class="heading-text ">
+                Web Development Conversation
+               </h4>
+               <p class="paragraph-schedule">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, iusto eum?
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem, ipsum dolor.
+               </p>
+             </div>
+            </article>
+            <hr/>   
+            <article class="flex justify-space align-center schedule-text column wrap">
+              <div class="flex-15 flex-100">
+              <div class="ballon ballon-1">
+               <span>09</span>
+               <span>Sept</span>
+                </div>
+               </div>
+               <div class="flex-15 flex-100">
+                 <img class="width-full border-radius font-0" src="assets/media/schedule-04.jpg" alt="">
+                </div>
+                <div class="flex-60 flex-100">
+                   <h4 class="heading-text ">
+                    Digital Marketing Conference
+                   </h4>
+                  <p class="paragraph-schedule">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, iusto eum?
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit Lorem, ipsum dolor.
+                 </p>
+                </div>
+            </article>
+            <div class="text-center schedule-text">
+                <a class="btn" href="#">Download Schedule</a>
+            </div>
+        </section>
+
+        <!-- INFO SECTION -->
+
+        <section class="join-section">
+            <div class="flex justify-space align-center text-center container padding wrap">
+                <div class="info-section info-background flex-100">
+                    <img class="" src="assets/media/speaker.png" alt="speaker">
+                    <h4 class="text-center">
+                        20+
+                    </h4>
+                    <p>
+                        Great Speakers
+                    </p>
+                </div>
+                <div class="info-section flex-100">
+                    <img class="" src="assets/media/idea.png" alt="">
+                    <h4 class="text-center">
+                        50+
+                    </h4>
+                    <p>
+                        Total Topic
+                    </p>
+                </div>
+                <div class="info-section info-background flex-100">
+                    <img class="" src="assets/media/participants.png" alt="">
+                    <h4 class="text-center">
+                        300+
+                    </h4>
+                    <p>
+                        Participants
+                    </p>
+                </div>
+                <div class="info-section info-background flex-100 ">
+                    <img class="" src="assets/media/sponsor.png" alt="">
+                    <h4 class="text-center">
+                        20+
+                    </h4>
+                    <p>
+                        Sponsors
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO SECTION -->
+
+        <section>
+            <div class="container padding relative">
+                <img class="width-full border-radius font-0" src="assets/media/banner.png" alt="banner">
+                <div class="absolute-video circle-icon">
+                    <a href="#">
+                        <i class="fas fa-play"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWS SECTION -->
+
+        <section class="join-section">
+            <div class="container padding">
+                <h4 class="text-center heading-text">
+                    Our Latest News
+                </h4>
+                <div class="flex justify-space item-center news-section wrap">
+                    <article class="flex-30 flex-100">
+                        <div>
+                            <img class="width-full font-0" src="assets/media/news-01.png" alt="">
+                        </div>
+                        <h5 class="heading-text">
+                            How to build a great protfolio as a beginner developer
+                        </h5>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        </p>
+                        <a href="#">Read More</a>
+                    </article>
+                    <article class="flex-30 flex-100">
+                        <div>
+                            <img class="width-full font-0"  src="assets/media/news-02.png" alt="">
+                        </div>
+                        <h5 class="heading-text">
+                            4 common situations while using Git and how to solve them
+                        </h5>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        </p>
+                        <a class="strong" href="#">Read More</a>
+                    </article>
+                    <article class="flex-30 flex-100">
+                        <div>
+                            <img class="width-full font-0" src="assets/media/news-03.png" alt="">
+                        </div>
+                        <h5 class="heading-text">
+                            Basic Unix commands that you should know
+                        </h5>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        </p>
+                        <a href="#">Read More</a>
+                    </article>
+                </div>
+            </div> 
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <section class="footer">
+            <div class="flex justify-space align-center container padding wrap text-center-1">
+                <div class="flex-15 flex-100">
+                    <img src="assets/media/footer-logo.png" alt="logo">
+                </div>
+                <div class="flex-30 flex-100">
+                    <h4>
+                        Quick Links
+                    </h4>
+                    <nav>
+                        <ul class="flex column">
+                            <li>
+                                <a href="#">Program</a>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex-35 flex-100">
+                    <h4>
+                        Follow Us
+                    </h4>
+                    <a href="#">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="small text-center">
+            <small>
+                &copy; AltCampus Services Pvt Ltd,2018-present.
+           </small>
+        </section>
+    </footer>
+</body>
+</html>
